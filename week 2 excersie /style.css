@@ -1,0 +1,46 @@
+body {
+  background-image: url("images/dave.png")
+}
+
+h1 {
+  font-size: 72px;
+  color: #2781f0;
+}
+
+h2 {
+  font-family: georgia, times, serif;
+  font-size: 42px;
+  color: #A9A9A9;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+}
+
+mark {
+  background-color: white;
+  color: black;
+}
+
+a:link {
+  color: darkred;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+a:visited {
+  color: beige;
+}
+
+a:hover {
+  color: #333;
+}
+
+a:active {
+  color: #333;
+}
