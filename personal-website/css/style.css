@@ -1,37 +1,100 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300&display=swap');
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  background-color: #fab000;
-  font-family: verdana, arial, sans-serif;
+body{
+    font-size: 16px;
 }
 
-header {
-  background-color: #333;
-  color: blanchedalmond;
-  padding: 2%;
+section.header_reading {
+  background-color: #00547E;
+  color: #fff;
+  width:100%;
+  height: 50vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-/* specifity targets elements inside of parents */
-header h1 {
-  font-size: 58px;
-  text-transform: uppercase;
+.header_reading header {
+  /* border:1px solid red; */
+  text-align: center;
 }
 
-header h2 {
-  font-size: 22px;
-  font-family: georgia, times, serif;
-  font-style: italic;
+.header_reading h2 {
+	font-family: 'Roboto', cursive;
+	font-size:3em;
+	line-height:1em;
+	text-transform:capitalize;
+	color:#eee;
+	font-weight:normal;
+}
+
+.header_reading h1 {
+	font-family: 'Roboto', cursive;
+	font-size:4em;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+
+section.header_pro{
+  background-color: #00547E;
+  color: #fff;
+  width:100%;
+  height: 30vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header_pro header {
+  /* border:1px solid red; */
+  text-align: center;
+}
+
+.header_pro h2 {
+	font-family: 'Roboto', cursive;
+	font-size:3em;
+	line-height:1em;
+	text-transform:capitalize;
+	color:#eee;
+	font-weight:normal;
+}
+
+.header_pro h1 {
+	font-family: 'Roboto', cursive;
+	font-size:4em;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+section.break {
+  background-color: #334C58;
+  color: #fff;
+  width:100%;
+  height: 7vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.break h2 {
+  font-family: 'Roboto', italic;
+	font-size:2em;
 }
 
 nav {
-  background-color: blanchedalmond;
+  background-color: #334C58;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a:link {
-  background-color: blanchedalmond;
+  background-color: #6698B1;
   color: #222;
   padding: 1.5% 2%;
   display: inline-block;
@@ -43,119 +106,33 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: blanchedalmond;
+  color: #7FB5D2;
   background-color: #333;
 }
+
 nav a.active{
-  color: blanchedalmond;
+  color: #7FB5D2;
   background-color: #333;
 }
 
-article {
+
+
+
+section.readings {
+  background-color: #003A58;
+  /* width:100%; */
+  min-height:70vh;
+  height: auto;
+   /* align-items: flex-start; */
+   display: flex;
+   padding:4%;
+
+   justify-content: space-between;
+}
+
+.readings article {
+  background-color: #fff;
+  width: 30%;
   padding: 2%;
-}
 
-article h1 {
-  font-size: 38px;
-  text-transform: capitalize;
-  margin-bottom: 0.5%;
-}
-
-article h2 {
-  font-size: 28;
-  text-transform: capitalize;
-  margin-bottom: .5%;
-}
-
-article p {
-  margin-bottom: 1%;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-/* classes start with a . and can be used many times on the page */
-.pull_quote {
-  background-color: #333;
-  color: #fff;
-  font-size: 22px;
-  padding: 2%;
-  margin: 0 4% 1%;
-  font-family: : georgia, times, serif;
-  font-style: italic;
-  border-left: solid 20px blanchedalmond;
-}
-figure{
-  margin-bottom: 1%;
-  width: 20%;
-  float: left;
-  margin-right: 2%;
-}
-figure img{
-  /* use % when you want a responisve img */
-  width:100%
-}
-figcaption {
-  font-size: 16px;
-  font-family: georgia, times, serif;
-  font-style: italic;
-  text-align: center;
-
-}
-footer {
-  padding: 2%;
-  background-color: #333;
-  color: blanchedalmond;
-  font-size: 16px;
-  font-family: georgia, times, serif;
-  font-style: italic;
-  /* text-align: center; */
-}
-
-
-
-pre {
-  padding: 0;
-  margin: 0;
-}
-
-.load {
-  margin: 0 auto;
-  min-height: 100%;
-  width: 100%;
-  background: black;
-}
-
-.term {
-  font-family: monospace;
-  color: #fff;
-  opacity: 0.8;
-  font-size: 2em;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-top: 10px;
-  padding-left: 20px;
-}
-
-.term:after {
-  content: "_";
-  opacity: 1;
-  animation: cursor 1s infinite;
-}
-
-@keyframes cursor {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
