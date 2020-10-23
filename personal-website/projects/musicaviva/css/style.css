@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+
+section.trio {
+  background: #e7e3d7;
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr 1fr  1fr  1fr 1fr 0.1fr 1fr  1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr  1fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-gap: 1fr; */
+}
+
+section.trio div {
+  background: #000;
+}
+
+section.trio h2 {
+  font-family: 'Rubik', Semi-bold600;
+  grid-column: 2/4;
+  grid-row: 2;
+}
+
+
+section.trio div:nth-child(2) {
+  background: #a19a8a;
+  grid-column: 6;
+  grid-row: 4;
+}
+
+section.trio div:nth-child(3) {
+  background: #d70029;
+  grid-column: 6;
+  grid-row: 6;
+}
+
+section.trio div:nth-child(4) {
+  background: #a19a8a;
+  grid-column: 6;
+  grid-row: 8;
+}
+
+section.trio div:nth-child(5) {
+  background: black;
+  grid-column: 4;
+  grid-row: 6;
+}
+
+section.trio div:nth-child(6) {
+  background: black;
+  grid-column: 8;
+  grid-row: 6;
+}
+
+section.trio div:nth-child(7) {
+  background: #f3cf01;
+  grid-column: 10;
+  grid-row: 6;
+}
+section.trio div:nth-child(8) {
+  background: #007da6;
+  grid-column: 3;
+  grid-row: 6;
+}
+section.trio h1 {
+    font-family: 'Rubik', Semi-bold600;
+    font-size: 150%;
+  grid-column: 2 / 5;
+  grid-row: 11;
+}
+section.trio h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 90%;
+    font-weight: semi;
+  grid-column: 7 / 9;
+  grid-row: 11;
+}
+  section.trio h4 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 60%;
+      font-weight: Semi;
+    grid-column: 9 / 13;
+    grid-row: 11 / 14;
+
+}
