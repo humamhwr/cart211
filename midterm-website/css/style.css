@@ -1,95 +1,102 @@
 @import 'https://fonts.googleapis.com/css?family=Passion+One|Poiret+One';
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-size: 16px;
-}
 
-section.header_lrg {
-  background-color: #333;
-  color: #fff;
-  width:100%;
-  height: 70vh;
-  display:flex;
+nav {
+  background-color: #334C5800;
+  display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
-
-
 }
 
-
-.header_lrg header {
-  /* border:1px solid red; */
-  text-align: center;
-
+nav a:link {
+  background-color: #000;
+  color: #fff;
+  padding: 1% 2%;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.header_lrg h2 {
-	font-family: 'Poiret One', cursive;
-	font-size:3em;
-	line-height:1em;
-	text-transform:capitalize;
-	color:#eee;
-	font-weight:normal;
+nav a:visited {
+  color: #444400;
 }
 
-.header_lrg h1 {
-	font-family: 'Passion One', cursive;
-	font-size:6em;
-	text-transform:uppercase;
-	font-weight:normal;
-}
-
-
-
-section.right {
-  background-color: #ff2a06;
-  width:100%;
-  min-height:70vh;
-  height: auto;
-  padding: 2%;
-  display:flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.right article {
+nav a:hover {
+  color: #000;
   background-color: #fff;
-  width: 30%;
-  padding: 2%;
 }
 
-section.col3x{
-  background-color: blanchedalmond;
+body {
+  background-image: url('../images/sea.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.banner {
+  font-size: 50px;
+  font-family: sans-serif;
+  color: #fff;
+  width: 100%;
+  height: 50vh;
   display: flex;
-}
-.col3x figure {
-  background-color: #333;
-  flex-grow:1;
+  justify-content: center;
+  align-items: center;
 }
 
-.col3x figcaption{
-  padding:2%;
-  color: azure;
-
-}
-figure img {
-  width:100%;
+section.trio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr  1fr  1fr 1fr 1fr 1fr  1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+  /* grid-gap: 1fr; */
 }
 
 
-section.col3xsm{
-  background-color: blanchedalmond;
-  display: flex;
-  padding:4%;
-  justify-content: space-between;
+section.trio h2 {
+  font-family: 'Rubik', Semi-bold600;
+  grid-column: 2/4;
+  grid-row: 2;
 }
 
-section.col3xsm figure {
-  width: 30%;
+
+section.trio div:nth-child(2) {
+  background-image: url('../images/faceman.gif');
+  grid-column: 2 / 6;
+  grid-row: 2 ;
+}
+
+section.trio div:nth-child(3) {
+  background: #d70029;
+  grid-column: 6;
+  grid-row: 6;
+}
+
+
+
+section.trio h1 {
+  color: aliceblue;
+    font-family: serif;
+    font-size: 50px;
+  grid-column: 2 / 6;
+  grid-row: 2;
+}
+section.trio h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 90%;
+    font-weight: semi;
+  grid-column: 7 / 9;
+  grid-row: 11;
+}
+  section.trio h4 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 60%;
+      font-weight: Semi;
+    grid-column: 9 / 13;
+    grid-row: 11 / 14;
 
 }
