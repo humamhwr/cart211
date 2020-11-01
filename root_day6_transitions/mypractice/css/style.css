@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  background: bisque;
+  display:flex;
+  position: fixed;
+  left:0;
+  top:0;
+  width: 100%;
+}
+a:link {
+  background: cadetblue;
+  flex-grow: 1;
+  text-align: center;
+  padding:1% 2%;
+  color:#333;
+  text-decoration: none;
+  transition: all .3s;
+}
+a:visited {
+  color:#555;
+}
+a:hover {
+  background: #333;
+  color:cadetblue;
+}
+
+
+
+.large{
+  width:100%;
+  height:100vh;
+  background: url(../images/places1.jpg) no-repeat fixed center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.large article{
+  width: 20%;
+  background: #fff;
+  padding: 2%;
+  opacity:1;
+  transition: all .5s;
+}
+
+.large article:hover{
+  opacity: 0;
+  background: blanchedalmond;
+}
+
+.med{
+  width:100%;
+  height:100vh;
+  background: blanchedalmond;
+}
