@@ -48,15 +48,40 @@ section.banner {
   justify-content: center;
   align-items: center;
 }
+
 section.banner img{
   width: 100%;
   position:absolute;
   TOP:400px;
   LEFT:100px;
   WIDTH:400px;
-  HEIGHT:450px
+  HEIGHT:450px;
 }
 
+section.banner .button {
+  background-color: #fff;
+  border: none;
+  color: lightskyblue;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+ transition-duration: 0.4s;
+
+  position:absolute;
+  TOP:450px;
+  LEFT:1100px;
+
+}
+
+section.banner .button:hover {
+  background-color: lightskyblue; /* Green */
+  color: white;
+}
 /* section.trio {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr  1fr  1fr 1fr 1fr 1fr  1fr 1fr;
