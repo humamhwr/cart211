@@ -31,7 +31,7 @@ nav a:hover {
 }
 
 body {
-  background-image: url('../images/sea.gif');
+  background-image: url('../images/windows-xp.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -48,14 +48,16 @@ section.banner {
   align-items: center;
 }
 
-section.banner img {
+section.error img {
   width: 100%;
   position: absolute;
-  TOP: 400px;
-  LEFT: 100px;
-  WIDTH: 400px;
-  HEIGHT: 450px;
+  TOP: 100px;
+  LEFT: 200px;
+  WIDTH:350px;
+  HEIGHT: 100px;
 }
+
+
 
 section.banner .button {
   background-color: #fff;
@@ -99,6 +101,41 @@ section.parent {
   grid-gap:2vmin;
 }
 
+section.essay {
+  position: absolute;
+  TOP: 450px;
+  LEFT: 750px;
+  WIDTH:900px;
+  HEIGHT: 700px;
+/* trying scrolbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+}
+section.word img {
+  width: 100%;
+  position: absolute;
+  TOP: 100px;
+  LEFT: 700px;
+  WIDTH:1000px;
+  HEIGHT: 1000px;
+}
 article {
 	background-color: #444;
 	color: #fff;
