@@ -107,25 +107,8 @@ section.essay {
   LEFT: 750px;
   WIDTH:900px;
   HEIGHT: 700px;
-/* trying scrolbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+style="height:120px;width:120px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
 
 }
 section.word img {
@@ -133,8 +116,8 @@ section.word img {
   position: absolute;
   TOP: 100px;
   LEFT: 700px;
-  WIDTH:1000px;
-  HEIGHT: 1000px;
+  WIDTH:1100px;
+  HEIGHT: 800px;
 }
 article {
 	background-color: #444;
