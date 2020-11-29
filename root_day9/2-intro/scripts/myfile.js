@@ -1,9 +1,10 @@
-//init the Variables
 let myImage = document.querySelector('#changeMe');
 let myFigure = document.querySelector('figure');
-const myHeading = document.querySelector('#headDisplay')
+const myHeading = document.querySelector('#headDisplay');
+
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
+    // if starts a conditional statement
     if(mySrc === 'img/night.jpg') {
       myImage.setAttribute('src','img/day.jpg');
       myHeading.textContent = 'Daytime!';
