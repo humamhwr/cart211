@@ -124,3 +124,55 @@ figure.box {
   bottom:0;
 
 }
+
+/* box 2 */
+
+figure.box2 {
+  margin:40px;
+  width:50%;
+  max-width: 600px;
+  height: 400px;
+  background:url('../images/tiktok.png') ;
+  background-size: cover;
+  box-shadow: 1px 1px 0 #333;
+  transition:all .3s;
+  /* make the parent relative to keep absolute children inside it */
+  position:fixed;
+  left: 1000px;
+  bottom: -30px;
+  /* overflow hidden to hide elements outside of parent */
+  overflow: hidden;
+}
+
+.box2:hover {
+  box-shadow: 2px 2px 0 #333,3px 3px 0 #333,4px 4px 0 #333,5px 5px 0 #333,6px 6px 0 #333 ;
+}
+
+.box2 h1 {
+  font-size: 42px;
+  background: aqua;
+  position:absolute;
+
+  top:100px;
+  width:100%;
+  text-align: center;
+  transition:all .3s;
+}
+
+
+.box2 figcaption {
+  background: #333;
+  color:#fff;
+  opacity: 0.8;
+  padding: 20px;
+  width: 100%;
+  height:100%;
+  position: absolute;
+  right: -6000px;
+  transition: all .3s .2s;
+}
+
+.box2:hover figcaption {
+  right:0;
+
+}
