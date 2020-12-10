@@ -44,9 +44,9 @@ nav a:active {
 
  body {
   background-image: url('../images/Gray-texture.jpg');
-  background-repeat: round;
+  background-repeat: no-repeat;
   height: 100%;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -193,7 +193,7 @@ figure.box3 {
   left: 150px;
   bottom: -200px;
   /* overflow hidden to hide elements outside of parent */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .box3:hover {

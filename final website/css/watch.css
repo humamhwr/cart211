@@ -12,6 +12,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation: slideUp 1s cubic-bezier(.39,-0.3,.38,1.4) 1 forwards;
+
 }
 
 nav a:link {
@@ -43,10 +44,10 @@ nav a:active {
 }
 
  body {
-  background-image: url('../images/watch-wallpaper.jpg');
-  background-repeat: round;
+  background-image: url('../images/watch-wallpaper1.jpg');
+  background-repeat: no-repeat;
   height: 100%;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -57,14 +58,6 @@ nav a:active {
 	to {opacity:1; top:0px;}
 }
 
-
-@keyframes rotateThis {
-	0% {transform: rotate(0deg); background: crimson}
-	25% {background: tomato;}
-	50% {background: cadetblue;}
-	75% {background: green;}
-	100% {transform: rotate(360deg); background: crimson}
-}
 
 section.transitions {
   width:100%;
@@ -143,6 +136,37 @@ figure.box {
   width: 600px;
   height: 100px;
   position: absolute;
-  right: 650px;
+  right: center;
   bottom: 700px;
+  animation: slideUp 1s cubic-bezier(.39, -0.3, .38, 1.4) 1 ;
+}
+
+#rcorners2 {
+  font-size: 25px;
+  border-radius: 25px;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  right: center;
+  bottom: 200px;
+  /* animation: slideUp 1s cubic-bezier(.39, -0.3, .38, 1.4) 1 ; */
+}
+iframe {
+position: absolute;
+border: 3px solid #000;
+border-radius: 15px;
+top: 300px;
+}
+/* video {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 15px;
+  top: 300px;
+} */
+
+blockquote {
+  top: 300px;
 }
