@@ -25,9 +25,20 @@ nav a:visited {
   color: #fff;
 }
 
+
 nav a:hover {
   color: #000;
-  background-color: #fff;
+  background-color: #ffffff00;
+  border-style: solid;
+  border-width: 2px ;
+  border-radius: 90000px;
+  border-color: white;
+
+}
+
+nav a:active {
+  color: #333;
+
 }
 
  body {
@@ -36,222 +47,226 @@ nav a:hover {
   background-attachment: fixed;
   background-size: cover;
 }
+/* ==== HEADER ANIMATION EXAMPLE ==== */
+header {
+  width:100%;
+  height:50vh;
+  background: #eee;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
 
-section.banner {
+header h1 {
+  font-size: 72px;
+  text-transform: capitalize;
+  position: relative;
+  top:0px;
+  animation: slideUp 1s cubic-bezier(.39,-0.3,.38,1.4) 1 forwards;
+}
 
-  font-size: 60px;
-  font-family: 'Londrina Outline', cursive;
+header h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color:#333;
+  position: relative;
+  top:100px;
+  opacity:0;
+  animation: slideUp 1s cubic-bezier(.39,-0.3,.38,1.4) .5s 1 forwards;
+}
 
-  color: #fff;
-  width: 100%;
-  height: 50vh;
+@keyframes slideUp {
+	from {opacity:0; top:100px;}
+	to {opacity:1; top:0px;}
+}
+
+/* animation on :hover */
+#anim {
+  width:100px;
+  height: 100px;
+  background: crimson;
+  position:absolute;
+  top:20px;
+  left:20px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section.banner img {
-  width: 100%;
-  position: absolute;
-  TOP: 400px;
-  LEFT: 100px;
-  WIDTH: 400px;
-  HEIGHT: 450px;
+#anim p {
+  width:50px;
+  height: 50px;
+  background: #fff;
+}
+#anim:hover {
+  animation: rotateThis 2s infinite linear;
 }
 
-section.banner .button {
-  background-color: #fff00;
-  border:2px solid white;
-  border-radius: 50px;
-  color: white;
-  padding: 13px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: serif;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  position: absolute;
-  TOP: 450px;
-  LEFT: 900px;
+@keyframes rotateThis {
+	0% {transform: rotate(0deg); background: crimson}
+	25% {background: tomato;}
+	50% {background: cadetblue;}
+	75% {background: green;}
+	100% {transform: rotate(360deg); background: crimson}
 }
 
-section.banner .button:hover {
-  background-color: lightskyblue;
-  background-image: url('../images/Gray-texture-pictures-backgrounds-download.jpg');
-  /* Green */
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0, 24, 0, 24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-section.banner .button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
-}
-
-
-section.parent {
+section.transitions {
   width:100%;
-  height:100vh;
-  padding:2.5vmin;
-  display:grid;
-  grid-template-columns: 11fr 11fr 11fr  ;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
-  grid-gap:2vmin;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-article {
-	background-color: #444;
-	color: #fff;
-	border-radius: 5px;
-	padding: 20px;
-	font-size: 2vmax;
+figure.box {
+  margin:40px;
+  width:50%;
+  max-width: 600px;
+  height: 400px;
+  background:url('../images/tiktok.png') ;
+  background-size: cover;
+  box-shadow: 1px 1px 0 #333;
+  transition:all .3s;
+  /* make the parent relative to keep absolute children inside it */
+  position:fixed;
+  left: 150px;
+  bottom: 400px;
+  /* overflow hidden to hide elements outside of parent */
+  overflow: hidden;
 }
 
-section.wireframe  {
-  background-color: aqua;
+.box:hover {
+  box-shadow: 2px 2px 0 #333,3px 3px 0 #333,4px 4px 0 #333,5px 5px 0 #333,6px 6px 0 #333 ;
 }
-.wireframe img {
+
+.box h1 {
+  font-size: 42px;
+  background: aqua;
+  position:absolute;
+  top:20px;
+  width:100%;
+  text-align: center;
+  transition:all .3s;
+}
+
+
+.box figcaption {
+  background: #333;
+  color:#fff;
+  opacity: 0.8;
+  padding: 20px;
   width: 100%;
-  height: 100%;
+  height:100%;
   position: absolute;
-  TOP: 50px;
-  LEFT: 00px;
-  /* WIDTH: 1900px; */
-  /* HEIGHT: 1150px; */
+left: -600px;
+  transition: all .3s .2s;
+}
+
+.box:hover figcaption {
+  right:0;
 
 }
 
-section.banner .button1 {
-  background-color: #fff00;
-  border: none;
-  color: white;
-  padding: 13px 30px;
+/* box 2 */
+
+figure.box2 {
+  margin:40px;
+  width:50%;
+  max-width: 600px;
+  height: 400px;
+  background:url('../images/tiktok.png') ;
+  background-size: cover;
+  box-shadow: 1px 1px 0 #333;
+  transition:all .3s;
+  /* make the parent relative to keep absolute children inside it */
+  position:fixed;
+  left: 1000px;
+  bottom: -30px;
+  /* overflow hidden to hide elements outside of parent */
+  overflow: hidden;
+}
+
+.box2:hover {
+  box-shadow: 2px 2px 0 #333,3px 3px 0 #333,4px 4px 0 #333,5px 5px 0 #333,6px 6px 0 #333 ;
+}
+
+.box2 h1 {
+  font-size: 42px;
+  background: aqua;
+  position:absolute;
+  top:20px;
+  width:100%;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  font-family:serif;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
+  transition:all .3s;
+}
+
+
+.box2 figcaption {
+  background: #333;
+  color:#fff;
+  opacity: 0.8;
+  padding: 20px;
+  width: 100%;
+  height:100%;
   position: absolute;
-  TOP: 750px;
-  LEFT: 50px;
+  right: -6000px;
+  transition: all .3s .2s;
 }
 
-section.banner .button1:hover {
-  background-color: lightskyblue;
-  se
-  /* Green */
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0, 24, 0, 24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+.box2:hover figcaption {
+  right:0;
+
 }
 
-section.banner .button1:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
+/* box 3 */
+
+figure.box3 {
+  margin:40px;
+  width:50%;
+  max-width: 600px;
+  height: 400px;
+  background:url('../images/tiktok.png') ;
+  background-size: cover;
+  box-shadow: 1px 1px 0 #333;
+  transition:all .3s;
+  /* make the parent relative to keep absolute children inside it */
+  position:fixed;
+  left: 1000px;
+  bottom: -1000px;
+  /* overflow hidden to hide elements outside of parent */
+  overflow: hidden;
 }
 
-section.banner .button2 {
-  background-color: #fff00;
-  border: none;
-  color: white;
-  padding: 13px 30px;
+.box3:hover {
+  box-shadow: 2px 2px 0 #333,3px 3px 0 #333,4px 4px 0 #333,5px 5px 0 #333,6px 6px 0 #333 ;
+}
+
+.box3 h1 {
+  font-size: 42px;
+  background: aqua;
+  position:absolute;
+  top:20px;
+  width:100%;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  font-family:serif;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
+  transition:all .3s;
+}
+
+
+.box3 figcaption {
+  background: #333;
+  color:#fff;
+  opacity: 0.8;
+  padding: 20px;
+  width: 100%;
+  height:100%;
   position: absolute;
-  TOP: 750px;
-  LEFT: 1650px;
+  right: -6000px;
+  transition: all .3s .2s;
 }
 
-section.banner .button2:hover {
-  background-color: lightskyblue;
-  /* Green */
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0, 24, 0, 24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
+.box3:hover figcaption {
+  right:0;
 
-section.banner .button2:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
-}
-
-section.banner .button3 {
-  background-color: #fff00;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  font-family:serif;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  position: absolute;
-  TOP:35px;
-  LEFT: 50px;
-}
-
-section.banner .button3:hover {
-  background-color: lightskyblue;
-  /* Green */
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0, 24, 0, 24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-section.banner .button3:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
-}
-
-section.banner .button4 {
-  background-color: #00;
-  border: none;
-  color: white;
-  padding: 13px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  font-family:serif;
-
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  position: absolute;
-  TOP:35px;
-  LEFT: 1650px;
-}
-
-section.banner .button4:hover {
-  background-color: lightskyblue;
-  /* Green */
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0, 24, 0, 24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-section.banner .button4:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
 }
