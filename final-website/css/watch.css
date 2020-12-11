@@ -144,7 +144,7 @@ figure.box {
   position: absolute;
   right: center;
   bottom: 200px;
-  /* animation: slideUp 1s cubic-bezier(.39, -0.3, .38, 1.4) 1 ; */
+
 }
 iframe {
 position: absolute;
@@ -159,9 +159,9 @@ video {
   top: 300px;
 }
 
-blockquote {
+/* blockquote {
   position: absolute;
   border: 3px solid #000;
   border-radius: 15px;
   top: 500px;
-}
+} */
