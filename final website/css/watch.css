@@ -137,8 +137,8 @@ figure.box {
   height: 100px;
   position: absolute;
   right: center;
-  bottom: 700px;
-  animation: slideUp 1s cubic-bezier(.39, -0.3, .38, 1.4) 1 ;
+  bottom: 750px;
+
 }
 
 #rcorners2 {
@@ -151,22 +151,25 @@ figure.box {
   height: 100px;
   position: absolute;
   right: center;
-  bottom: 200px;
+  bottom: 300px;
   /* animation: slideUp 1s cubic-bezier(.39, -0.3, .38, 1.4) 1 ; */
 }
 iframe {
 position: absolute;
-border: 3px solid #000;
+/* border: 3px solid #000; */
 border-radius: 15px;
-top: 300px;
+top: 200px;
 }
-/* video {
+video {
   position: absolute;
   border: 3px solid #000;
   border-radius: 15px;
   top: 300px;
-} */
-
-blockquote {
-  top: 300px;
 }
+
+/* blockquote {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 15px;
+  top: 900px;
+} */
